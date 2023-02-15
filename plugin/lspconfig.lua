@@ -1,4 +1,7 @@
 local opts = { noremap=true, silent=true }
+local status, nvim_lsp = pcall(require, 'lspconifg')
+
+if (not status) then return end
 
 local on_attach = function(client, bufnr)
 
@@ -54,3 +57,9 @@ vim.diagnostic.config({
   },
 })
 
+-- TypeScript
+nvim_lsp.tsserver.setup {
+  on_attach = on_attach,
+  filetype = { 'typescript', 'typescriptreact', 'typescript.tsx' },
+  cmd =   { 'typescript-language-server', '--stdio' }
+}

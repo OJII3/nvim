@@ -19,4 +19,3 @@ Let's use `lazy.nvim`!
 This is one of the strong points of Neovim. However, it is a little conplicated to manage all of them by myself.
 
 Let's use `mason.nvim`!!
-

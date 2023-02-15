@@ -21,18 +21,26 @@ require("lazy").setup({
   "folke/which-key.nvim",
   { "folke/neoconf.nvim", cmd = "Neoconf" },
   "folke/neodev.nvim",
-  -- 'nvim-lua/plenary.nvim', -- Common
+  --- 'nvim-lua/plenary.nvim', -- Common
   -- color scheme
   {
     'folke/tokyonight.nvim',
-    init = function() vim.cmd[[colorscheme tokyonight]] end
+    init = function() vim.cmd[[colorscheme tokyonight]] end,
   },
+  'kyazdani42/nvim-web-devicons',
   'nvim-lualine/lualine.nvim', -- Statusline
+  'lambdalisue/fern.vim',
   'lambdalisue/nerdfont.vim',
   -- lsp
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
   "neovim/nvim-lspconfig",
+  'onsails/lspkind-nvim',
+  {
+    'L3MON4D3/LuaSnip',
+    version = '<CurrentMajor>.*',
+    lazy = true,
+  },
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
   'hrsh7th/cmp-vsnip',
