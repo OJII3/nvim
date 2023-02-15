@@ -1,13 +1,13 @@
 -- auto bootstrap lazy.nvim ======================================================
 
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
+    'git',
+    'clone',
+    '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable', -- latest stable release
     lazypath,
   })
 end
@@ -15,13 +15,14 @@ vim.opt.rtp:prepend(lazypath)
 
 -- setup lazy.nivm ==========================================================
 
-vim.g.mapleader = " " -- make sure to set `mapleader` before lazy so your mappings are correct
+vim.g.mapleader = ' ' -- make sure to set `mapleader` before lazy so your mappings are correct
 
-require("lazy").setup({
-  "folke/which-key.nvim",
-  { "folke/neoconf.nvim", cmd = "Neoconf" },
-  "folke/neodev.nvim",
-  --- 'nvim-lua/plenary.nvim', -- Common
+require('lazy').setup({
+  'folke/which-key.nvim',
+  { 'folke/neoconf.nvim', cmd = 'Neoconf' },
+  'folke/neodev.nvim',
+  'nvim-lua/plenary.nvim', -- Common
+  'lambdalisue/fern.vim',
   -- color scheme
   {
     'folke/tokyonight.nvim',
@@ -32,14 +33,17 @@ require("lazy").setup({
   'lambdalisue/fern.vim',
   'lambdalisue/nerdfont.vim',
   -- lsp
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
-  "neovim/nvim-lspconfig",
+  'williamboman/mason.nvim',
+  'williamboman/mason-lspconfig.nvim',
+  {
+    'neoclide/coc.nvim',
+    branch = 'release',
+  },
+  'neovim/nvim-lspconfig',
   'onsails/lspkind-nvim',
   {
     'L3MON4D3/LuaSnip',
     version = '<CurrentMajor>.*',
-    lazy = true,
   },
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
@@ -51,13 +55,13 @@ require("lazy").setup({
   'onsails/lspkind.nvim',
   'windwp/nvim-autopairs',
   'windwp/nvim-ts-autotag',
-  "terrortylor/nvim-comment",
-  "kylechui/nvim-surround",
+  'terrortylor/nvim-comment',
+  'kylechui/nvim-surround',
   'lewis6991/gitsigns.nvim',
   'nvim-telescope/telescope.nvim',
   {
-    "glepnir/lspsaga.nvim",
-    branch = "main",
+    'glepnir/lspsaga.nvim',
+    branch = 'main',
   },
   {
     'nvim-treesitter/nvim-treesitter',
