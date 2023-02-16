@@ -8,14 +8,5 @@
 
 **Caution!**
 
-Do not run `sudo apt install neovim`!! You will install the older version!
-
-## Plugin Management
-
-Let's use `lazy.nvim`!
-
-## Built in Language Server
-
-This is one of the strong points of Neovim. However, it is a little conplicated to manage all of them by myself.
-
-Let's use `mason.nvim`!!
+- Do not run `sudo apt install neovim`!! You will install the older version!
+- Make sure your git config `core.autocrlf` is false!
