@@ -26,15 +26,13 @@ require('lazy').setup({
   -- color scheme
   {
     'folke/tokyonight.nvim',
-    init = function() vim.cmd[[colorscheme tokyonight]] end,
+    init = function() vim.cmd[[colorscheme tokyonight-moon]] end,
   },
   'kyazdani42/nvim-web-devicons',
   'nvim-lualine/lualine.nvim', -- Statusline
   'lambdalisue/fern.vim',
   'lambdalisue/nerdfont.vim',
   -- lsp
-  'williamboman/mason.nvim',
-  'williamboman/mason-lspconfig.nvim',
   {
     'neoclide/coc.nvim',
     branch = 'release',
@@ -53,7 +51,10 @@ require('lazy').setup({
   'hrsh7th/cmp-cmdline',
   'hrsh7th/cmp-nvim-lsp-signature-help',
   'onsails/lspkind.nvim',
-  'windwp/nvim-autopairs',
+  {
+    'windwp/nvim-autopairs',
+    init = function() require('nvim-autopairs').setup() end,
+  },
   'windwp/nvim-ts-autotag',
   'terrortylor/nvim-comment',
   'kylechui/nvim-surround',
@@ -66,5 +67,6 @@ require('lazy').setup({
   {
     'nvim-treesitter/nvim-treesitter',
     init = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
-  }
+  },
+  'github/Copilot.vim'
 })
