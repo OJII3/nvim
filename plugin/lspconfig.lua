@@ -18,17 +18,6 @@ end
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
--- require("mason").setup()
--- require("mason-lspconfig").setup()
--- require("mason-lspconfig").setup_handlers {
---  function (server_name) -- default handler (optional)
---  require("lspconfig")[server_name].setup {
---  on_attach = on_attach,
---  capabilities = capabilities,
---  }
---  end,
---  }
-
 -- Diagnostic symbols in the sign column 
 local signs = { Error = " ", Warn = ">>", Hint = ">", Info = ">" }
 for type, icon in pairs(signs) do
@@ -58,8 +47,4 @@ vim.diagnostic.config({
 })
 
 -- TypeScript
--- nvim_lsp.tsserver.setup {
---  on_attach = on_attach,
---  filetype = { 'typescript', 'typescriptreact', 'typescript.tsx' },
---  cmd =   { 'typescript-language-server', '--stdio' }
--- }
+
