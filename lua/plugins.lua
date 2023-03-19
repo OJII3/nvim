@@ -71,5 +71,6 @@ require('lazy').setup({
     init = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   },
   'github/Copilot.vim',
-  'ryicoh/deepl.vim'
+  'ryicoh/deepl.vim',
+  'haya14busa/vim-edgemotion',
 })
