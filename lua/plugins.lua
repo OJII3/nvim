@@ -60,6 +60,8 @@ require('lazy').setup({
   'kylechui/nvim-surround',
   'lewis6991/gitsigns.nvim',
   'nvim-telescope/telescope.nvim',
+  'andymass/vim-matchup',
+  'ggandor/lightspeed.nvim',
   {
     'glepnir/lspsaga.nvim',
     branch = 'main',
@@ -68,5 +70,6 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     init = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   },
-  'github/Copilot.vim'
+  'github/Copilot.vim',
+  'ryicoh/deepl.vim'
 })
