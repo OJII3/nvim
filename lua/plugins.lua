@@ -24,9 +24,13 @@ require('lazy').setup({
   'nvim-lua/plenary.nvim', -- Common
   'lambdalisue/fern.vim',
   -- color scheme
+  -- {
+  --   'folke/tokyonight.nvim',
+  --   init = function() vim.cmd[[colorscheme tokyonight-moon]] end,
+  -- },
   {
-    'folke/tokyonight.nvim',
-    init = function() vim.cmd[[colorscheme tokyonight-moon]] end,
+    'EdenEast/nightfox.nvim',
+    init = function() vim.cmd[[colorscheme nightfox]] end,
   },
   'kyazdani42/nvim-web-devicons',
   'nvim-lualine/lualine.nvim', -- Statusline

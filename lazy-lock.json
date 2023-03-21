@@ -20,6 +20,7 @@
   "neoconf.nvim": { "branch": "main", "commit": "2f2c54fa6620c88cd0ef9348afd495de0ab047e3" },
   "neodev.nvim": { "branch": "main", "commit": "98c5330cc93df975da6f4bd6bd826b993c126057" },
   "nerdfont.vim": { "branch": "master", "commit": "3daf10116daad5da257486c9043c658cced4dd31" },
+  "nightfox.nvim": { "branch": "main", "commit": "53cdaa583138698f4a0a4a9d2abaf761c8960407" },
   "nvim-autopairs": { "branch": "master", "commit": "45ae3122a4c7744db41298b41f9f5a3f092123e6" },
   "nvim-cmp": { "branch": "main", "commit": "c4128bcd131fb7152bda8f8dd2b5e41d2fefa88c" },
   "nvim-comment": { "branch": "main", "commit": "e9ac16ab056695cad6461173693069ec070d2b23" },
@@ -30,7 +31,6 @@
   "nvim-web-devicons": { "branch": "master", "commit": "bb6d4fd1e010300510172b173ab5205d37af084f" },
   "plenary.nvim": { "branch": "master", "commit": "9a0d3bf7b832818c042aaf30f692b081ddd58bd9" },
   "telescope.nvim": { "branch": "master", "commit": "203bf5609137600d73e8ed82703d6b0e320a5f36" },
-  "tokyonight.nvim": { "branch": "main", "commit": "a0abe53df53616d13da327636cb0bcac3ea7f5af" },
   "vim-edgemotion": { "branch": "master", "commit": "8d16bd92f6203dfe44157d43be7880f34fd5c060" },
   "vim-matchup": { "branch": "master", "commit": "f69d1ac5bd3c4e6ad349f64317000cc9a4a895cf" },
   "which-key.nvim": { "branch": "main", "commit": "6e190f4732a0f2fc517036f2fcf7727893bc5329" }
