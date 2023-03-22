@@ -21,13 +21,7 @@ require('lazy').setup({
   'folke/which-key.nvim',
   { 'folke/neoconf.nvim', cmd = 'Neoconf' },
   'folke/neodev.nvim',
-  'nvim-lua/plenary.nvim', -- Common
-  'lambdalisue/fern.vim',
-  -- color scheme
-  -- {
-  --   'folke/tokyonight.nvim',
-  --   init = function() vim.cmd[[colorscheme tokyonight-moon]] end,
-  -- },
+  'nvim-lua/plenary.nvim',
   {
     'EdenEast/nightfox.nvim',
     init = function() vim.cmd[[colorscheme dayfox]] end,
@@ -37,16 +31,10 @@ require('lazy').setup({
   'lambdalisue/fern.vim',
   'lambdalisue/nerdfont.vim',
   -- lsp
-  {
-    'neoclide/coc.nvim',
-    branch = 'release',
-  },
+  'neoclide/coc.nvim',
   'neovim/nvim-lspconfig',
   'onsails/lspkind-nvim',
-  {
-    'L3MON4D3/LuaSnip',
-    version = '<CurrentMajor>.*',
-  },
+  'L3MON4D3/LuaSnip',
   'hrsh7th/nvim-cmp',
   'hrsh7th/cmp-nvim-lsp',
   'hrsh7th/cmp-vsnip',
@@ -59,7 +47,7 @@ require('lazy').setup({
     'windwp/nvim-autopairs',
     init = function() require('nvim-autopairs').setup() end,
   },
-  'windwp/nvim-ts-autotag',
+  -- 'windwp/nvim-ts-autotag',
   'terrortylor/nvim-comment',
   'kylechui/nvim-surround',
   'lewis6991/gitsigns.nvim',

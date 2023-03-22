@@ -47,4 +47,7 @@ vim.diagnostic.config({
 })
 
 -- TypeScript
-
+vim.tsserver.config({
+  document_formatting = false,
+  document_range_formatting = false,
+})

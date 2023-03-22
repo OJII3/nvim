@@ -17,15 +17,4 @@ vim.api.nvim_create_autocmd({ 'TermOpen' }, {
   command = 'startinsert',
 })
 
-local init_fern = function()
-  vim.opt.number = false
-  vim.api.nvim_buf_set_keymap(0, 'n', '<C-h>', '<Plug>(fern-action-hidden:toggle)', {})
-end
-local fern_id = vim.api.nvim_create_augroup('fern-custom', {})
-vim.api.nvim_create_autocmd({'FileType'}, {
-  pattern = 'fern',
-  callback = init_fern,
-  group = fern_id,
-})
-
 require('plugins')
