@@ -30,7 +30,7 @@ require('lazy').setup({
   -- },
   {
     'EdenEast/nightfox.nvim',
-    init = function() vim.cmd[[colorscheme nightfox]] end,
+    init = function() vim.cmd[[colorscheme dayfox]] end,
   },
   'kyazdani42/nvim-web-devicons',
   'nvim-lualine/lualine.nvim', -- Statusline
