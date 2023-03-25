@@ -31,7 +31,10 @@ require('lazy').setup({
   'lambdalisue/fern.vim',
   'lambdalisue/nerdfont.vim',
   -- lsp
-  'neoclide/coc.nvim',
+  {
+    'neoclide/coc.nvim',
+    branch = 'release',
+  },
   'neovim/nvim-lspconfig',
   'onsails/lspkind-nvim',
   'L3MON4D3/LuaSnip',
