@@ -65,4 +65,5 @@ require('lazy').setup({
   'github/Copilot.vim',
   'ryicoh/deepl.vim',
   'haya14busa/vim-edgemotion',
+  'tpope/vim-commentary',
 })
