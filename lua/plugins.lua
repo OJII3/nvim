@@ -55,7 +55,7 @@ require('lazy').setup({
   'kylechui/nvim-surround',
   'lewis6991/gitsigns.nvim',
   'nvim-telescope/telescope.nvim',
-  'andymass/vim-matchup',
+  -- 'andymass/vim-matchup',
   'ggandor/lightspeed.nvim',
   {
     'glepnir/lspsaga.nvim',
