@@ -11,7 +11,7 @@
   "deepl.vim": { "branch": "main", "commit": "2397b16d4070080b695321a1fe7958fd0812176b" },
   "fern.vim": { "branch": "main", "commit": "dae5eb2debe023fce0e3dfafbf879bd89946d6d0" },
   "gitsigns.nvim": { "branch": "main", "commit": "ca473e28382f1524aa3d2b6f04bcf54f2e6a64cb" },
-  "lazy.nvim": { "branch": "main", "commit": "32d5f4af2fdc0c04d60e3d5b5da3fc19a2c3699e" },
+  "lazy.nvim": { "branch": "main", "commit": "57cce98dfdb2f2dd05a0567d89811e6d0505e13b" },
   "lightspeed.nvim": { "branch": "main", "commit": "299eefa6a9e2d881f1194587c573dad619fdb96f" },
   "lspkind-nvim": { "branch": "master", "commit": "c68b3a003483cf382428a43035079f78474cd11e" },
   "lspkind.nvim": { "branch": "master", "commit": "c68b3a003483cf382428a43035079f78474cd11e" },
