@@ -46,21 +46,5 @@ vim.g.mapleader = ','
 
 local keymap = vim.keymap
 
--- -- キーバインド
--- -- 画面分割
--- keymap.set('n', 'ss', ':split<Return><C-w>w')
--- keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
--- -- アクティブウィンドウの移動
--- keymap.set('', 'sh', '<C-w>h')
--- keymap.set('', 'sk', '<C-w>k')
--- keymap.set('', 'sj', '<C-w>j')
--- keymap.set('', 'sl', '<C-w>l')
--- 
--- -- Emacs like keybinding
--- keymap.set('i', '<C-f>', '<Right>')
--- 
--- -- jjでEscする
--- keymap.set('i','jj','<Esc>')
--- 
 -- 設定ファイルを開く
 keymap.set('n','<F1>',':edit $MYVIMRC<CR>')

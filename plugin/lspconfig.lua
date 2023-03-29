@@ -1,5 +1,5 @@
 local opts = { noremap=true, silent=true }
-local status, nvim_lsp = pcall(require, 'lspconifg')
+local status, lspconfig = pcall(require, 'lspconifg')
 
 if (not status) then return end
 
@@ -47,7 +47,9 @@ vim.diagnostic.config({
 })
 
 -- TypeScript
-vim.tsserver.config({
+lspconfig.tsserver.setup({
   document_formatting = false,
   document_range_formatting = false,
 })
+
+lspconfig.rome.setup({})
