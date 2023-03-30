@@ -20,21 +20,30 @@ vim.g.mapleader = ' ' -- make sure to set `mapleader` before lazy so your mappin
 require('lazy').setup({
   'folke/which-key.nvim',
   { 'folke/neoconf.nvim', cmd = 'Neoconf' },
-  'folke/neodev.nvim',
   'nvim-lua/plenary.nvim',
   {
     'EdenEast/nightfox.nvim',
-    init = function() vim.cmd([[colorscheme dayfox]]) end,
+    init = function()
+      local command = [[colorscheme nightfox]]
+      vim.cmd(command)
+    end,
   },
   'kyazdani42/nvim-web-devicons',
   'nvim-lualine/lualine.nvim', -- Statusline
-  'lambdalisue/fern.vim',
   'lambdalisue/nerdfont.vim',
-  -- lsp
+  'lambdalisue/fern.vim',
+  'lambdalisue/fern-git-status.vim',
   {
     'neoclide/coc.nvim',
     branch = 'release',
   },
+  -- lsp
+  'jose-elias-alvarez/null-ls.nvim',
+  {
+    'williamboman/mason.nvim',
+    build = ":MasonUpdate"
+  },
+  'williamboman/mason-lspconfig.nvim',
   'neovim/nvim-lspconfig',
   'onsails/lspkind-nvim',
   'L3MON4D3/LuaSnip',
@@ -50,8 +59,6 @@ require('lazy').setup({
     'windwp/nvim-autopairs',
     init = function() require('nvim-autopairs').setup() end,
   },
-  -- 'windwp/nvim-ts-autotag',
-  'terrortylor/nvim-comment',
   'kylechui/nvim-surround',
   'lewis6991/gitsigns.nvim',
   'nvim-telescope/telescope.nvim',

@@ -52,4 +52,3 @@ lspconfig.tsserver.setup({
   document_range_formatting = false,
 })
 
-lspconfig.rome.setup({})
