@@ -77,4 +77,5 @@ require('lazy').setup({
   'ryicoh/deepl.vim',
   'haya14busa/vim-edgemotion',
   'tpope/vim-commentary',
+  'johngrib/vim-game-code-break'
 })
