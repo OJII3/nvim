@@ -34,6 +34,12 @@ for _, package in ipairs(mason_registry.get_installed_packages()) do
   end
 end
 
+
+table.insert(null_sources, null_ls.builtins.diagnostics.eslint.with({
+  prefer_local = "node_modules/.bin"
+}))
+
+
 null_ls.setup({
   sources = null_sources,
 })

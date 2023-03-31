@@ -29,7 +29,7 @@ require('lazy').setup({
     end,
   },
   'kyazdani42/nvim-web-devicons',
-  'nvim-lualine/lualine.nvim', -- Statusline
+  'nvim-lualine/lualine.nvim',
   'lambdalisue/nerdfont.vim',
   'lambdalisue/fern.vim',
   'lambdalisue/fern-git-status.vim',
@@ -38,13 +38,13 @@ require('lazy').setup({
     branch = 'release',
   },
   -- lsp
+  'neovim/nvim-lspconfig',
   'jose-elias-alvarez/null-ls.nvim',
   {
     'williamboman/mason.nvim',
     build = ":MasonUpdate"
   },
   'williamboman/mason-lspconfig.nvim',
-  'neovim/nvim-lspconfig',
   'onsails/lspkind-nvim',
   'L3MON4D3/LuaSnip',
   'hrsh7th/nvim-cmp',
@@ -63,6 +63,7 @@ require('lazy').setup({
   'lewis6991/gitsigns.nvim',
   'nvim-telescope/telescope.nvim',
   -- 'andymass/vim-matchup',
+  'windwp/nvim-ts-autotag',
   'ggandor/lightspeed.nvim',
   {
     'glepnir/lspsaga.nvim',
