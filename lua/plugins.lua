@@ -24,7 +24,7 @@ require('lazy').setup({
   {
     'EdenEast/nightfox.nvim',
     init = function()
-      local command = [[colorscheme nightfox]]
+      local command = [[colorscheme carbonfox]]
       vim.cmd(command)
     end,
   },
