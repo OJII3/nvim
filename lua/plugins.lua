@@ -21,13 +21,21 @@ require('lazy').setup({
   'folke/which-key.nvim',
   { 'folke/neoconf.nvim', cmd = 'Neoconf' },
   'nvim-lua/plenary.nvim',
+  -- colorscheme
   {
-    'EdenEast/nightfox.nvim',
+    'folke/tokyonight.nvim',
     init = function()
-      local command = [[colorscheme carbonfox]]
+      local command = [[colorscheme tokyonight-day]]
       vim.cmd(command)
     end,
   },
+  -- {
+  --   'EdenEast/nightfox.nvim',
+  --   init = function()
+  --     local command = [[colorscheme nightfox]]
+  --     vim.cmd(command)
+  --   end,
+  -- },
   'kyazdani42/nvim-web-devicons',
   'nvim-lualine/lualine.nvim',
   'lambdalisue/nerdfont.vim',
