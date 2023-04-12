@@ -20,11 +20,11 @@ vim.opt.expandtab = true
 vim.opt.scrolloff = 10
 vim.opt.shell = 'bash'
 vim.opt.inccommand = 'split'
-vim.opt.ignorecase = true 
+vim.opt.ignorecase = true
 vim.opt.smarttab = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
-vim.opt.wrap = false 
+vim.opt.wrap = false
 vim.opt.helplang = 'en'
 vim.opt.updatetime = 300
 vim.opt.showtabline = 2
@@ -35,14 +35,13 @@ vim.opt.hidden = true
 vim.opt.swapfile = false
 vim.opt.wrap = true
 vim.opt.pumblend = 7
+
 -- Python3
 vim.cmd([[
     let g:python3_host_prog = '/usr/bin/python3'
 ]])
 -- 不可視文字を非表示(colorscheme用)
 vim.opt.list = false
--- Leder Key
-vim.g.mapleader = ','
 
 local keymap = vim.keymap
 

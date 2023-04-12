@@ -1,5 +1,4 @@
 {
-  "rome.enable": true,
   "eslint.run": "onType",
   "eslint.autoFixOnSave": true,
   "stylelintplus.autoFixOnSave": true,

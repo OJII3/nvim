@@ -32,8 +32,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   severity_sort = true,
   underline = true,
   update_in_insert = false,
-}
-)
+})
 
 -- Diagnostic Setting(Gloabal)
 vim.diagnostic.config({

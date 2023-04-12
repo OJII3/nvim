@@ -28,7 +28,7 @@ cmp.setup({
   }
 })
 
-vim.cmd [[
+vim.cmd([[
   highlight! default link CmpItemKind CmpItemMenuDefault
-]]
+]])
 

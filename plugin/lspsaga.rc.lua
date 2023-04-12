@@ -6,7 +6,7 @@ local keymap = vim.keymap.set
 saga.setup{
   ui = {
     -- currently only round theme
-    theme = 'round',
+    -- theme = 'round',
     -- this option only work in neovim 0.9
     title = false,
     -- border type can be single,double,rounded,solid,shadow.
@@ -50,7 +50,7 @@ saga.setup{
     sign = false,
     sign_priority = 40,
     virtual_text = false,
-  }, 
+  },
 
   diagnostic = {
     show_code_action = false,
@@ -74,11 +74,3 @@ saga.setup{
   },
 }
 
--- keymap("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", { silent = true })
--- keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { silent = true })
--- keymap("n", "rn", "<cmd>Lspsaga rename<CR>", { silent = true })
--- keymap("n", "K", "<cmd>Lspsaga hover_doc ++quiet<CR>", { silent = true }) 
--- keymap("n", "<space>e", "<cmd>Lspsaga show_line_diagnostics<CR>", { silent = true })
--- keymap({"n","v"}, "ma", "<cmd>Lspsaga code_action<CR>", { silent = true })
--- keymap("n", "g[", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { silent = true })
--- keymap("n", "g]", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })
