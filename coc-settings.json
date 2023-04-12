@@ -1,7 +1,6 @@
 {
-  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSave": true,
   "stylelintplus.autoFixOnSave": true,
-  "stylelintplus.validateOnSave": true,
   "css.validate": false,
   "scss.validate": false
 }
