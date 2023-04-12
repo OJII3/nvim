@@ -1,5 +1,6 @@
 {
   "Copilot.vim": { "branch": "release", "commit": "b6e5624351ba735e25eb8864d7d22819aad00606" },
+  "LuaSnip": { "branch": "master", "commit": "eb592e4be52fff5a514b7540d5341b55ca4c3226" },
   "coc.nvim": { "branch": "release", "commit": "bbaa1d5d1ff3cbd9d26bb37cfda1a990494c4043" },
   "deepl.vim": { "branch": "main", "commit": "2397b16d4070080b695321a1fe7958fd0812176b" },
   "fern-git-status.vim": { "branch": "master", "commit": "151336335d3b6975153dad77e60049ca7111da8e" },
