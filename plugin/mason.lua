@@ -6,22 +6,12 @@ end
 local mason_package = require('mason-core.package')
 local mason_registry = require('mason-registry')
 local null_ls = require('null-ls')
-
-mason.setup()
-
-local nvim_lsp = require('lspconfig')
+local null_ls_helpers = require('null-ls.helpers')
 local mason_lspconfig = require('mason-lspconfig')
-mason_lspconfig.setup_handlers({
-  function (server_name)
-    local opts = {}
-    opts.on_attach = function (_, bufnr)
-      local bufopts = { silent = true, buffer = bufnr }
-      vim.keymap.set('n', 'gtD', '<cmd>lua vim.lsp.buf.type_definition()<CR>', bufopts)
-    end
-    nvim_lsp[server_name].setup(opts)
-  end
-})
+local nvim_lspconfig = require('lspconfig')
 
+mason.setup({})
+mason_lspconfig.setup({})
 
 local null_sources = {}
 for _, package in ipairs(mason_registry.get_installed_packages()) do

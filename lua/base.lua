@@ -1,49 +1,47 @@
 vim.cmd("autocmd!")
 
+local opt = vim.opt
+
 vim.scriptencoding = 'utf-8'
-vim.opt.encoding = 'utf-8'
-vim.opt.fileencoding = 'utf-8'
-vim.opt.fileformat = 'unix'
-vim.opt.number = true
-vim.wo.relativenumber = false
-vim.opt.mouse = 'a'
-vim.opt.title = true
-vim.opt.autoindent = true
-vim.opt.smartindent = true
-vim.opt.breakindent = true
-vim.opt.hlsearch = true
-vim.opt.backup = false
-vim.opt.showcmd = true
-vim.opt.cmdheight = 2
-vim.opt.laststatus = 2
-vim.opt.expandtab = true
-vim.opt.scrolloff = 10
-vim.opt.shell = 'bash'
-vim.opt.inccommand = 'split'
-vim.opt.ignorecase = true
-vim.opt.smarttab = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.wrap = false
-vim.opt.helplang = 'en'
-vim.opt.updatetime = 300
-vim.opt.showtabline = 2
-vim.opt.clipboard = 'unnamedplus'
-vim.opt.termguicolors = true
-vim.opt.signcolumn = 'yes'
-vim.opt.hidden = true
-vim.opt.swapfile = false
-vim.opt.wrap = true
-vim.opt.pumblend = 7
+opt.encoding = 'utf-8'
+opt.fileencoding = 'utf-8'
+opt.fileformat = 'unix'
+opt.number = true
+opt.relativenumber = false
+opt.mouse = 'a'
+opt.title = true
+opt.autoindent = true
+opt.smartindent = true
+opt.breakindent = true
+opt.hlsearch = true
+opt.backup = false
+opt.showcmd = true
+opt.cmdheight = 2
+opt.laststatus = 2
+opt.expandtab = true
+opt.scrolloff = 10
+opt.shell = 'bash'
+opt.inccommand = 'split'
+opt.ignorecase = true
+opt.smarttab = true
+opt.shiftwidth = 2
+opt.tabstop = 2
+opt.wrap = false
+opt.helplang = 'en'
+opt.updatetime = 300
+opt.showtabline = 2
+opt.clipboard = 'unnamedplus'
+opt.termguicolors = true
+opt.signcolumn = 'yes'
+opt.hidden = true
+opt.swapfile = false
+opt.wrap = true
+opt.pumblend = 7
 
 -- Python3
-vim.cmd([[
-    let g:python3_host_prog = '/usr/bin/python3'
-]])
+-- vim.cmd([[
+--     let g:python3_host_prog = '/usr/bin/python3'
+-- ]])
 -- 不可視文字を非表示(colorscheme用)
-vim.opt.list = false
+opt.list = false
 
-local keymap = vim.keymap
-
--- 設定ファイルを開く
-keymap.set('n','<F1>',':edit $MYVIMRC<CR>')
