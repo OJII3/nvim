@@ -1,6 +1,7 @@
 local keymap = vim.keymap
 
 keymap.set('n','<F1>',':edit $MYVIMRC<CR>')
+keymap.set('n', '<F7>', ':split term://bash<CR>')
 
 keymap.set('n', '<Space>e', "<cmd>Fern . -drawer -toggle<CR>", { noremap = true, silent = true })
 
