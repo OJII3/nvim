@@ -53,7 +53,7 @@ require('lazy').setup({
   { 'ggandor/lightspeed.nvim' },
   { 'glepnir/lspsaga.nvim', branch = 'main' },
   { 'nvim-treesitter/nvim-treesitter', init = function() require('nvim-treesitter.install').update({ with_sync = true }) end },
-  { 'github/Copilot.vim' },
+  { 'github/Copilot.vim', init = function() vim.cmd([[ let g:copilot_filetypes = { 'markdown': v:true }]]) end },
   { 'ryicoh/deepl.vim' },
   { 'haya14busa/vim-edgemotion' },
   { 'tpope/vim-commentary' },
