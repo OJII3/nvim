@@ -1,5 +1,4 @@
 -- auto bootstrap lazy.nvim ======================================================
-
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -53,7 +52,9 @@ require('lazy').setup({
   { 'ggandor/lightspeed.nvim' },
   { 'glepnir/lspsaga.nvim', branch = 'main' },
   { 'nvim-treesitter/nvim-treesitter', init = function() require('nvim-treesitter.install').update({ with_sync = true }) end },
-  { 'github/Copilot.vim', init = function() vim.cmd([[ let g:copilot_filetypes = { 'markdown': v:true }]]) end },
+  { 'github/Copilot.vim' },
+  { 'vim-denops/denops.vim' },
+  { 'vim-skk/skkeleton'},
   { 'ryicoh/deepl.vim' },
   { 'haya14busa/vim-edgemotion' },
   { 'tpope/vim-commentary' },

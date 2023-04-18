@@ -1,4 +1,4 @@
-vim.cmd("autocmd!")
+vim.cmd 'autocmd!'
 
 local opt = vim.opt
 
@@ -38,10 +38,5 @@ opt.swapfile = false
 opt.wrap = true
 opt.pumblend = 7
 
--- Python3
--- vim.cmd([[
---     let g:python3_host_prog = '/usr/bin/python3'
--- ]])
--- 不可視文字を非表示(colorscheme用)
-opt.list = false
+-- opt.list = false
 

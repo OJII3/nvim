@@ -10,3 +10,9 @@
 
 - Do not run `sudo apt install neovim`!! You will install the older version!
 - Make sure your git config `core.autocrlf` is false!
+
+## Prerequisite
+
+- Node.js
+- Deno
+

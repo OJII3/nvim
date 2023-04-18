@@ -25,6 +25,7 @@ ts.setup {
     'tsx',
     'typescript',
     'yaml',
+    'markdown',
   },
   highlight = {
     enable = true,

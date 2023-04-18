@@ -1,3 +1,4 @@
-vim.cmd([[
+vim.cmd [[
   colorscheme carbonfox
-]])
+]]
+
