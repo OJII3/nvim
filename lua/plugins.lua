@@ -58,5 +58,7 @@ require('lazy').setup({
   { 'ryicoh/deepl.vim' },
   { 'haya14busa/vim-edgemotion' },
   { 'tpope/vim-commentary' },
-  { 'johngrib/vim-game-code-break' }
+  { 'johngrib/vim-game-code-break' },
+  { 'iamcco/markdown-preview.nvim', config = function() vim.fn["mkdp#util#install"]() end },
+  { 'akinsho/toggleterm.nvim', config = true },
 })

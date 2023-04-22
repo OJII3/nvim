@@ -1,4 +1,4 @@
 vim.cmd [[
-  colorscheme carbonfox
+  colorscheme tokyonight-day
 ]]
 
