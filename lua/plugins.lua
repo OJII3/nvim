@@ -61,4 +61,5 @@ require('lazy').setup({
   { 'johngrib/vim-game-code-break' },
   { 'iamcco/markdown-preview.nvim', config = function() vim.fn["mkdp#util#install"]() end },
   { 'akinsho/toggleterm.nvim', config = true },
+  { 'goolord/alpha-nvim' },
 })
