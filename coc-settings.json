@@ -1,6 +1,7 @@
 {
-  "rome.enable": false,
+  "coc.preferences.formatOnSave": true,
   "eslint.autoFixOnSave": true,
+  "stylelintplus.autoFixOnFormat": true,
   "stylelintplus.autoFixOnSave": true,
   "css.validate": false,
   "scss.validate": false
